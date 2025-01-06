@@ -24,11 +24,12 @@
 	font-size: 1em;
 }
 
-.errorMessage {
+.error {
 	font-family: 'Montserrat', serif;
 	font-size: 1em;
 	color: red;
 	margin: 0 0 20px;
+	white-space: pre-line;
 }
 
 .registration button {
@@ -49,4 +50,9 @@
 .registration button:hover,
 .registration button:focus {
 	background: #fcd9b8;
+}
+
+.registration button:disabled {
+	cursor: not-allowed;
+	background: #f2f2f2;
 }

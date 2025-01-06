@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import propTypes, { object } from 'prop-types'
+import propTypes from 'prop-types'
 import styles from './registration.module.css'
 
 const RegistrationLayout = ({
@@ -45,12 +45,11 @@ const RegistrationLayout = ({
 
 RegistrationLayout.propTypes = {
 	displayErrors: propTypes.string,
-	errors: propTypes.object,
-	validateEmail: propTypes.func,
-	validatePassword: propTypes.func,
-	onSubmit: propTypes.func,
-	validatePasswordConfirmation: propTypes.func,
-	submitButtonRef: propTypes.object,
+	validateEmail: propTypes.func.isRequired,
+	validatePassword: propTypes.func.isRequired,
+	onSubmit: propTypes.func.isRequired,
+	validatePasswordConfirmation: propTypes.func.isRequired,
+	submitButtonRef: propTypes.object.isRequired,
 }
 
 export const Registration = () => {

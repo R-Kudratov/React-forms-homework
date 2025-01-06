@@ -133,6 +133,7 @@ export const Registration = () => {
 
 		if (validateForm()) {
 			console.log(email, password)
+			event.target.reset()
 			setEmail('')
 			setPassword('')
 			setPasswordConfirmation('')
